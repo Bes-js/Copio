@@ -1,0 +1,38 @@
+# SwiftPM and generated build files
+.build/
+.build-*/
+.index-build/
+.swiftpm/
+DerivedData/
+*.dSYM/
+*.xcarchive/
+
+# Release packages (upload these to GitHub Releases, not to the repository)
+dist/
+*.app/
+*.dmg
+*.zip
+*.pkg
+appcast.xml
+SHA256SUMS.txt
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.pem
+*.key
+*.mobileprovision
+*.provisionprofile
+
+# Editor and macOS files
+.DS_Store
+._*
+.vscode/
+.idea/
+xcuserdata/
+*.xcuserstate
+*.swp
+*~

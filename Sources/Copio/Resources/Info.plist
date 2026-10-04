@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>CFBundleIdentifier</key><string>com.clipcollections.app</string>
+  <key>CFBundleName</key><string>Copio</string>
+  <key>CFBundleDisplayName</key><string>Copio</string>
+  <key>CFBundleExecutable</key><string>Copio</string>
+  <key>CFBundleIconFile</key><string>Copio.icns</string>
+  <key>NSHumanReadableCopyright</key><string>© 2026 Bes-js</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>1.1.0</string>
+  <key>CFBundleVersion</key><string>2</string>
+  <key>SUFeedURL</key><string>https://github.com/Bes-js/Copio/releases/latest/download/appcast.xml</string>
+  <key>SUPublicEDKey</key><string>8nn3KSeRAaoDpQc44gBKEyBh/HXnA0Dt8NJpV32pI7Y=</string>
+  <key>SUEnableAutomaticChecks</key><true/>
+  <key>SUAutomaticallyUpdate</key><true/>
+  <key>LSMinimumSystemVersion</key><string>14.0</string>
+  <key>LSUIElement</key><true/>
+</dict></plist>
