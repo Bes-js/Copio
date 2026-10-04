@@ -4,7 +4,7 @@ cd "${0:A:h:h}"
 
 if [[ $# -ne 2 ]]; then
   print -u2 "Usage: ./scripts/generate-appcast.sh <release-directory> <tag>"
-  print -u2 "Example: ./scripts/generate-appcast.sh dist/release-v1.1.0 v1.1.0"
+  print -u2 "Example: ./scripts/generate-appcast.sh dist/release-v1.2.0 v1.2.0"
   exit 1
 fi
 
@@ -26,8 +26,13 @@ if [[ ! -x "$TOOL" ]]; then
   exit 1
 fi
 
+STAGING_DIR="$(mktemp -d)"
+trap 'rm -rf "$STAGING_DIR"' EXIT
+ditto "$ARCHIVE" "$STAGING_DIR/Copio-$VERSION.dmg"
+
 "$TOOL" --account Bes-js-Copio \
   --download-url-prefix "https://github.com/Bes-js/Copio/releases/download/$TAG/" \
   --link "https://github.com/Bes-js/Copio/releases/tag/$TAG" \
-  -o "$RELEASE_DIR/appcast.xml" "$RELEASE_DIR"
+  -o "$STAGING_DIR/appcast.xml" "$STAGING_DIR"
+mv -f "$STAGING_DIR/appcast.xml" "$RELEASE_DIR/appcast.xml"
 print "$RELEASE_DIR/appcast.xml"

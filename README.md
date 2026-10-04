@@ -58,10 +58,10 @@ For each public release:
 
 1. Increase both `CFBundleShortVersionString` and `CFBundleVersion` in `Sources/Copio/Resources/Info.plist`. The build number must increase for Sparkle to recognize an update.
 2. Build the universal app with `./scripts/build-app.sh`. The script ad hoc signs the app; no Apple Developer ID certificate is needed.
-3. Package the app as `Copio-X.Y.Z.dmg` in an otherwise empty release directory. For example: `./scripts/package-dmg.sh dist/release-v1.1.0/Copio-1.1.0.dmg`.
-4. Run `./scripts/generate-appcast.sh dist/release-v1.1.0 v1.1.0`. This signs the update archive using the private Sparkle key saved in this Mac's Keychain under `Bes-js-Copio`. Generate the appcast **before** adding the ZIP to the release directory.
-5. Run `./scripts/package-zip.sh dist/release-v1.1.0/Copio-1.1.0.zip` to offer a ZIP download too.
-6. Create a GitHub Release tagged `v1.1.0` and upload `Copio-1.1.0.dmg`, `Copio-1.1.0.zip`, and `appcast.xml` as assets. Use the matching version and tag for later releases.
+3. Package the app as `Copio-X.Y.Z.dmg` in an otherwise empty release directory. For example: `./scripts/package-dmg.sh dist/release-v1.2.0/Copio-1.2.0.dmg`.
+4. Run `./scripts/generate-appcast.sh dist/release-v1.2.0 v1.2.0`. This signs the DMG update archive using the private Sparkle key saved in this Mac's Keychain under `Bes-js-Copio`.
+5. Run `./scripts/package-zip.sh dist/release-v1.2.0/Copio-1.2.0.zip` to offer a ZIP download too.
+6. Create a GitHub Release tagged `v1.2.0` and upload `Copio-1.2.0.dmg`, `Copio-1.2.0.zip`, and `appcast.xml` as assets. `SHA256SUMS.txt` is optional but recommended for download verification. Use the matching version and tag for later releases.
 
 Keep the Sparkle private key out of the repository and back it up securely. The app contains only its public verification key. The update feed is `https://github.com/Bes-js/Copio/releases/latest/download/appcast.xml`. Sparkle archive signatures protect updates; they do not replace Apple's Developer ID signature or notarization. Until a newer release exists, the update installation path cannot be tested end to end.
 

@@ -15,6 +15,7 @@ dist/
 *.pkg
 appcast.xml
 SHA256SUMS.txt
+docs/dmg-background.png
 
 # Local credentials and signing material
 .env
