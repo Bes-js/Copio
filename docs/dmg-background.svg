@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111a2b"/>
+      <stop offset="0.55" stop-color="#172945"/>
+      <stop offset="1" stop-color="#0e1726"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="0%" r="72%">
+      <stop offset="0" stop-color="#2b80e8" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#2b80e8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="720" height="460" fill="url(#background)"/>
+  <rect width="720" height="460" fill="url(#glow)"/>
+  <circle cx="680" cy="-18" r="130" fill="#3688ef" opacity=".08"/>
+  <circle cx="46" cy="430" r="150" fill="#5c70d6" opacity=".06"/>
+
+  <g transform="translate(316 34)">
+    <rect x="0" y="11" width="28" height="28" rx="7" fill="#2684ff" opacity=".95"/>
+    <rect x="8" y="3" width="28" height="28" rx="7" fill="#5aa9ff"/>
+    <rect x="14" y="9" width="16" height="16" rx="4" fill="#eaf4ff"/>
+  </g>
+  <text x="360" y="92" fill="#f7faff" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="middle">Install Copio</text>
+  <text x="360" y="119" fill="#aebed2" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle">Drag Copio to Applications to get started</text>
+  <rect x="94" y="147" width="532" height="2" rx="1" fill="#7090b7" opacity=".18"/>
+
+  <g fill="none" stroke="#7ab4fb" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+    <path d="M330 263h57" stroke-width="3"/>
+    <path d="m374 250 14 13-14 13" stroke-width="3"/>
+  </g>
+  <text x="250" y="405" fill="#b7c6d8" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">1. Drag the app</text>
+  <text x="475" y="405" fill="#b7c6d8" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">2. Drop it here</text>
+  <text x="360" y="438" fill="#71849d" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle">Private clipboard history for macOS</text>
+</svg>
